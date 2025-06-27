@@ -3,14 +3,14 @@ import random
 computer = random.choice([-1,0,1])
 youstr = input("Enter your choice: ")
 youDict = {"s": 1, "w": -1, "g": 0}
-reverseDict = {1:"Snake",-1:"Water",0:"Gun"} #Converts the numbers back into names for printing.
+reverseDict = {1:"Snake",-1:"Water",0:"Gun"} 
 
-you = youDict[youstr] #Your input string is converted into a number using youDict.
+you = youDict[youstr]
 
-print(f"You choose {reverseDict[you]}\nComputer choose {reverseDict[computer]}") #Shows what both you and the computer chose.
+print(f"You choose {reverseDict[you]}\nComputer choose {reverseDict[computer]}") 
 
 if(computer == you):
-    print("Its a draw") #If both chose the same thing — it's a draw.
+    print("Its a draw") 
 
 else:
     if(computer == 1 and you == 0):
